@@ -223,6 +223,160 @@ nav a:hover {
     background-color: #ff9800;
 }
 
+
+/* Tutoring Section */
+.tutoring-services {
+    max-width: 700px;
+    margin: 60px auto 100px;
+    padding: 0 10%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.tutoring-services h1 {
+    color: #667eea;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tutoring-services ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tutoring-services > ul > li {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.tutoring-services > ul > li > strong {
+    font-size: 1.3rem;
+    color: #ff9800;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.tutoring-services ul ul {
+    list-style: disc inside;
+    color: #555;
+    margin-left: 20px;
+}
+
+.tutoring-services ul ul li {
+    margin-bottom: 8px;
+}
+
+/* Tutoring Page Header */
+.tutoring-header {
+    max-width: 800px;
+    margin: 60px auto 40px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.tutoring-header h1 {
+    font-size: 2.8rem;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.tutoring-header p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Cards Container */
+.tutoring-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto 100px;
+    padding: 0 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+}
+
+.card .icon {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    /* Different icon colors by category */
+}
+
+.card h2 {
+    color: #ff9800;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: disc inside;
+    color: #444;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Icon colors by category */
+.card.coding .icon {
+    color: #667eea;
+}
+
+.card.gaming .icon {
+    color: #ff9800;
+}
+
+.card.editing .icon {
+    color: #764ba2;
+}
+
+.card.other .icon {
+    color: #4caf50;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+    .tutoring-header h1 {
+        font-size: 2rem;
+    }
+    .card h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.tutoring-cards .btn-secondary {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 22px;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #ff9800;
+}
+
+
 /* Footer */
 footer {
     background-color: #222;
