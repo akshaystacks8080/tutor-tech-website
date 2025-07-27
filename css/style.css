@@ -49,13 +49,6 @@ nav a:hover {
     color: #ff9800;
 }
 
-section:not(.parallax-hero){
-    padding: 80px 10%;
-    background: linear-gradient(to bottom, #ffffff, #367465);
-    border-radius: 12px;
-    /* margin: 40px auto; */
-    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.03); */
-}
 
 /* Hero Section */
 .hero {
@@ -517,7 +510,7 @@ section:not(.parallax-hero){
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     padding: 100px 10%;
-    background: linear-gradient(to bottom, #f0f4f8, #e9f0f6);
+    background: linear-gradient(to bottom, #ffffff, #367465);
     text-align: center;
     box-sizing: border-box;
     border-top: 1px solid #ddd;
