@@ -53,8 +53,8 @@ section:not(.parallax-hero){
     padding: 80px 10%;
     background: linear-gradient(to bottom, #ffffff, #367465);
     border-radius: 12px;
-    margin: 40px auto;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.03);
+    /* margin: 40px auto; */
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.03); */
 }
 
 /* Hero Section */
