@@ -427,15 +427,6 @@ section:not(.parallax-hero){
     margin-bottom: 30px;
 }
 
-.testimonials {
-    padding: 80px 10%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.03);
-}
-
 /* Why Us */
 .why-us-section {
     position: relative;
@@ -523,23 +514,32 @@ section:not(.parallax-hero){
 
 /* Testimonials */
 .testimonials {
-    /* padding: 60px 20px; */
-    background: #f0f4f8;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 100px 10%;
+    background: linear-gradient(to bottom, #f0f4f8, #e9f0f6);
     text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
+
 
 .testimonials blockquote {
     font-style: italic;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 20px auto;
-    max-width: 700px;
+    max-width: 800px;
+    line-height: 1.6;
 }
 
 .testimonials cite {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    color: #333;
 }
+
 
 /* Footer */
 footer {
