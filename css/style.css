@@ -49,6 +49,14 @@ nav a:hover {
     color: #ff9800;
 }
 
+section:not(.parallax-hero){
+    padding: 80px 10%;
+    background: linear-gradient(to bottom, #ffffff, #367465);
+    border-radius: 12px;
+    margin: 40px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.03);
+}
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -81,13 +89,17 @@ nav a:hover {
     background-color: #e07b00;
 }
 
+.about, .tutoring-services {
+    background: linear-gradient(to bottom, #ffffff, #367465);
+}
+
 /* Services Section */
 .services {
     display: flex;
     justify-content: space-around;
     gap: 40px;
     padding: 80px 10%;
-    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #f0f0f0, #367465);
 }
 
 .service {
@@ -133,7 +145,7 @@ nav a:hover {
 /* About Section */
 .about {
     padding: 80px 10%;
-    background-color: #fff;
+    /* background-color: #fff; */
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
@@ -229,7 +241,7 @@ nav a:hover {
     max-width: 700px;
     margin: 60px auto 100px;
     padding: 0 10%;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.05);
     text-align: left;
@@ -376,12 +388,99 @@ nav a:hover {
     background-color: #ff9800;
 }
 
+/* Parallax */
+.parallax-hero {
+    background-image: url("../images/index_pic1.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.parallax-content {
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.parallax-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.why-us,
+.testimonials {
+    padding: 80px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.03);
+}
+
+/* Why Us */
+.why-us {
+    
+    /* padding: 60px 20px; */
+    background: #fff;
+    text-align: center;
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+.why-us li {
+    margin: 10px 0;
+}
+
+/* Testimonials */
+.testimonials {
+    /* padding: 60px 20px; */
+    background: #f0f4f8;
+    text-align: center;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 700px;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
 
 /* Footer */
 footer {
-    background-color: #222;
-    color: #aaa;
+    background: #333;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
+    padding: 20px 10px;
 }

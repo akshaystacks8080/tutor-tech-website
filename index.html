@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Tutor Tech & Design - Home</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,29 +15,64 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
+    <!-- Parallax Hero -->
+    <section class="parallax-hero">
+        <div class="parallax-content" data-aos="zoom-in">
             <h1>Empowering Students. Elevating Websites.</h1>
             <p>Your trusted partner for tutoring and web design excellence.</p>
             <a href="about.html" class="btn">Learn More</a>
-        </section>
+        </div>
+    </section>
 
-        <section class="services">
-            <div class="service">
-                <h2>Tutoring Services</h2>
-                <p>We help students build a solid foundation in coding, web design, and computer science. Personalized, practical, and results-driven.</p>
-                <a href="tutoring.html" class="btn-secondary">Explore Tutoring</a>
-            </div>
-            <div class="service">
-                <h2>Website Development</h2>
-                <p>We design clean, modern, and effective websites for small businesses. From idea to launch, we handle it all with care and precision.</p>
-                <a href="about.html" class="btn-secondary">Explore Web Design</a>
-            </div>
-        </section>
-    </main>
+    <!-- Services -->
+    <section class="services" data-aos="fade-up">
+        <div class="service">
+            <h2>Tutoring Services</h2>
+            <p>We help students build a solid foundation in coding, web design, and computer science. Personalized, practical, and results-driven.</p>
+            <a href="tutoring.html" class="btn-secondary">Explore Tutoring</a>
+        </div>
+        <div class="service">
+            <h2>Website Development</h2>
+            <p>We design clean, modern, and effective websites for small businesses. From idea to launch, we handle it all with care and precision.</p>
+            <a href="about.html" class="btn-secondary">Explore Web Design</a>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" data-aos="fade-right">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>✔ Expert Tutors & Designers</li>
+            <li>✔ 1-on-1 Personalized Support</li>
+            <li>✔ Proven Track Record with Students & Clients</li>
+            <li>✔ Affordable Pricing & Flexible Scheduling</li>
+        </ul>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" data-aos="fade-left">
+        <h2>What Our Students Say</h2>
+        <blockquote>
+            "I went from beginner to confident coder in just a few months. Highly recommend!"
+            <cite>— Sarah, 14</cite>
+        </blockquote>
+        <blockquote>
+            "They made launching my business website so easy. Amazing design!"
+            <cite>— Jay, Small Business Owner</cite>
+        </blockquote>
+    </section>
 
     <footer>
         &copy; 2025 Tutor Tech & Design. All rights reserved.
     </footer>
+
+    <!-- AOS Scroll Animations -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 3000,
+            once: true
+        });
+    </script>
 </body>
 </html>
