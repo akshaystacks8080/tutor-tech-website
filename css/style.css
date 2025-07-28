@@ -49,6 +49,7 @@ nav a:hover {
     color: #ff9800;
 }
 
+
 /* Hero Section */
 .hero {
     text-align: center;
@@ -81,13 +82,17 @@ nav a:hover {
     background-color: #e07b00;
 }
 
+.about, .tutoring-services {
+    background: linear-gradient(to bottom, #ffffff, #367465);
+}
+
 /* Services Section */
 .services {
     display: flex;
     justify-content: space-around;
     gap: 40px;
     padding: 80px 10%;
-    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #f0f0f0, #367465);
 }
 
 .service {
@@ -133,7 +138,7 @@ nav a:hover {
 /* About Section */
 .about {
     padding: 80px 10%;
-    background-color: #fff;
+    /* background-color: #fff; */
     text-align: center;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
@@ -229,7 +234,7 @@ nav a:hover {
     max-width: 700px;
     margin: 60px auto 100px;
     padding: 0 10%;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(0,0,0,0.05);
     text-align: left;
@@ -376,12 +381,163 @@ nav a:hover {
     background-color: #ff9800;
 }
 
+/* Parallax */
+.parallax-hero {
+    background-image: url("../images/index_pic1.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.parallax-content {
+    background: rgba(0, 0, 0, 0.4); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    padding: 60px 40px;
+    max-width: 800px;
+    width: 90%;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.parallax-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Why Us */
+.why-us-section {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(4px) brightness(0.6);
+}
+
+/* Content on top of video */
+.why-us {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.why-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 800;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+}
+
+.why-us ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.why-us li {
+    flex: 1 1 250px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease;
+}
+
+
+.why-us li {
+    margin: 10px 0;
+}
+
+.why-us li:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Testimonials */
+.testimonials {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 100px 10%;
+    background: linear-gradient(to bottom, #ffffff, #367465);
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.testimonials blockquote {
+    font-style: italic;
+    font-size: 1.3rem;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
 
 /* Footer */
 footer {
-    background-color: #222;
-    color: #aaa;
+    background: #333;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
+    padding: 20px 10px;
 }
