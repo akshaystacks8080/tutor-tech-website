@@ -123,16 +123,22 @@ nav a:hover {
 
 .btn-secondary {
     display: inline-block;
-    background-color: #667eea;
+    background-color: #367465; 
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 22px;
+    font-size: 1rem;
     text-decoration: none;
     border-radius: 30px;
-    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-secondary:hover {
-    background-color: #ff9800;
+    background-color: #2d5e52;
+    color: #000;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #39FF14, 0 0 20px #39FF14;
 }
 
 /* About Section */
@@ -148,13 +154,13 @@ nav a:hover {
 
 .about h1 {
     font-size: 2rem;
-    color: #667eea;
+    color: #367465;
     margin-bottom: 20px;
 }
 
 .about p {
     font-size: 1.1rem;
-    color: #555;
+    color: #0c0303;
     max-width: 600px;
     margin: 10px auto;
 }
@@ -230,51 +236,6 @@ nav a:hover {
 
 
 /* Tutoring Section */
-.tutoring-services {
-    max-width: 700px;
-    margin: 60px auto 100px;
-    padding: 0 10%;
-    /* background-color: #fff; */
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.05);
-    text-align: left;
-}
-
-.tutoring-services h1 {
-    color: #667eea;
-    margin-bottom: 30px;
-    font-size: 2rem;
-    text-align: center;
-}
-
-.tutoring-services ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.tutoring-services > ul > li {
-    margin-bottom: 25px;
-    font-size: 1.1rem;
-    color: #333;
-}
-
-.tutoring-services > ul > li > strong {
-    font-size: 1.3rem;
-    color: #ff9800;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.tutoring-services ul ul {
-    list-style: disc inside;
-    color: #555;
-    margin-left: 20px;
-}
-
-.tutoring-services ul ul li {
-    margin-bottom: 8px;
-}
-
 /* Tutoring Page Header */
 .tutoring-header {
     max-width: 800px;
@@ -285,7 +246,7 @@ nav a:hover {
 
 .tutoring-header h1 {
     font-size: 2.8rem;
-    color: #667eea;
+    color: #22a185;
     margin-bottom: 10px;
 }
 
@@ -308,7 +269,7 @@ nav a:hover {
 
 /* Card Styles */
 .card {
-    background-color: #fff;
+    background: linear-gradient(145deg, #ffffff, #36746589);
     border-radius: 16px;
     padding: 30px 25px;
     box-shadow: 0 10px 25px rgba(102, 126, 234, 0.15);
@@ -365,20 +326,6 @@ nav a:hover {
     .card h2 {
         font-size: 1.5rem;
     }
-}
-
-.tutoring-cards .btn-secondary {
-    margin-top: 20px;
-    display: inline-block;
-    padding: 10px 22px;
-    font-size: 1rem;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn-secondary:hover {
-    background-color: #ff9800;
 }
 
 /* Parallax */
