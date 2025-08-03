@@ -497,6 +497,138 @@ nav a:hover {
     color: #333;
 }
 
+/* Website Development Page Styles */
+.website-header {
+    padding: 100px 10%;
+    background: linear-gradient(to bottom, #2b815a, #c1b23d);
+    text-align: center;
+    color: #1d3c36;
+    border-top: 2px solid #2d5e52;
+}
+
+.website-header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.website-header p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services */
+.website-services {
+    padding: 60px 10%;
+    background-color: #f8f9f5;
+    text-align: center;
+}
+
+.website-services h2 {
+    font-size: 2rem;
+    color: #367465;
+    margin-bottom: 20px;
+}
+
+.website-services ul {
+    list-style: disc inside;
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Pricing */
+.website-pricing {
+    padding: 80px 10%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.website-pricing h2 {
+    font-size: 2rem;
+    color: #367465;
+    margin-bottom: 40px;
+}
+
+.pricing-tiers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.pricing-tiers .card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-tiers .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.pricing-tiers .card h3 {
+    font-size: 1.6rem;
+    color: #367465;
+    margin-bottom: 10px;
+}
+
+.pricing-tiers .card p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.pricing-tiers .card ul {
+    list-style: disc inside;
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+    padding-left: 0;
+}
+
+/* Call to Action */
+.website-cta {
+    padding: 80px 10%;
+    background: #367465;
+    color: white;
+    text-align: center;
+}
+
+.website-cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.website-cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.website-cta .btn-secondary {
+    background-color: #fff;
+    color: #367465;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.website-cta .btn-secondary:hover {
+    background-color: #d3f9e6;
+    transform: scale(1.05);
+}
+
 
 /* Footer */
 footer {
